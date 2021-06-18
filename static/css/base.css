@@ -2,11 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 /* Global Variables */
 :root{
     --silver: #eee;
     --golden: #be8f1f;
+}
+
+html{
+    height: 100vh;
 }
 
 body{
@@ -56,9 +63,32 @@ h1, h2, h3, h4, h5{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
     height: 100%;
     padding: 0;
     margin: 0;
+}
+
+#RP-main-menu-list-logo{
+    padding: 2em 0;
+}
+
+.RP-main-menu-list-sub{
+    text-transform: none;
+    font-family: 'Dancing Script', cursive;
+    background: -webkit-linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-block: -25px 0;
+    margin-left: -30px;
+}
+
+.RP-king{
+    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+    margin-block: -25px 0;
+    margin-left: 120px;
+    padding-bottom: 10px;
 }
 
 .RP-main-menu-list-item a{
@@ -71,16 +101,19 @@ h1, h2, h3, h4, h5{
 }
 
 .first{
-    margin-top: 75%;
+    margin-top: 20%;
 }
 
-.justify-end{
-    margin-top: auto;
+.justify-start{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    margin: 0 auto;
 }
 
 .RP-crown{
     display: block;
-    margin: 15% 0;
+    margin: 0 0;
     color: var(--silver);
     transition: color 0.6s ease;
 }

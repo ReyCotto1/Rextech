@@ -35,3 +35,7 @@ def api():
     with open('data.json', mode='r') as my_file:
         text = my_file.read()
         return text
+
+
+if env == "dev":
+    app.run()
